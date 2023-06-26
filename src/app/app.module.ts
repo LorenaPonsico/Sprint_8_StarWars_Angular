@@ -9,8 +9,9 @@ import { fakeBackendProvider } from './_helpers';
 import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home';
+import { StarShipsComponent } from './starshipslist';
 import { LoginComponent, RegisterComponent } from './account';
+import { CardshipComponent } from './cardship/cardship.component';
 
 @NgModule({
     imports: [
@@ -21,9 +22,10 @@ import { LoginComponent, RegisterComponent } from './account';
     ],
     declarations: [
         AppComponent,
-        HomeComponent,
+        StarShipsComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        CardshipComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

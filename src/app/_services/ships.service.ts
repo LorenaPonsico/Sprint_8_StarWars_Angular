@@ -1,19 +1,21 @@
-// import { HttpClient } from '@angular/common/http';
-// import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
-// @Injectable({providedIn: 'root'})
+@Injectable({providedIn: 'root'})
 
-// export class ShipsService {
+export class ShipsService {
 
-//     // public shipList: Ships[] = [];
-//     private serviceURL = 'https://swapi.dev/api/starships';
+    // public shipList: Ships[] = [];
+    private serviceURL = 'https://swapi.dev/api/starships';
+    private nextPage = 2;
 
-//     constructor( private http: HttpClient) { }
+    constructor( private http: HttpClient) { }
     
-// //     getShips(){
-// //       this.http.get<SearchResponse>('serviceURL')
-// //       .subscribe ( resp =>{
-// //         this.shipList = resp.
-// //       })
-// //     }
-// }
+
+    getShips(): Observable<any> {
+        const url = `${this.serviceURL}/?page=${this.nextPage}`;
+        this.nextPage++;
+        return this.http.get<any>(url);
+      }
+}
