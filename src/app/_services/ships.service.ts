@@ -8,6 +8,7 @@ export class ShipsService {
 
     // public shipList: Ships[] = [];
     private serviceURL = 'https://swapi.dev/api/starships';
+    private imageURL = 'https://starwars-visualguide.com/assets/img/starships/'
     private nextPage = 2;
 
     constructor( private http: HttpClient) { }
@@ -18,4 +19,12 @@ export class ShipsService {
         this.nextPage++;
         return this.http.get<any>(url);
       }
-}
+
+    getImages(starshipId: string): string {
+      return `${this.imageURL}${starshipId}.jpg`;
+    }
+  }
+  
+  
+  // console.log(url)
+      // return this.http.get<any>(url);
