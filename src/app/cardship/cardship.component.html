@@ -1,24 +1,28 @@
-<div class="card">
+<link rel="stylesheet" href="cardship.component.css">
 
-    <h1 class="text-center ">{{ starship.name | uppercase }}</h1>
-    <div class="container text-center">
-<img [src]="imagesURL">
-        <p>Model: {{ starship.model }}</p>
-        <p>StarShip Class: {{ starship.starship_class }}</p>
-    <p>Manufacturer: {{ starship.manufacturer }}</p>
-    <p>Cost: {{ starship.cost_in_credits }} CREDITS </p>
-    <br>
-    
-    <p>Crew: {{ starship.crew }}</p>
-    <p>Passenger Capacity: {{ starship.passengers }}</p>
-    <p>Cargo Capacity: {{ starship.cargo_capacity }} TONS </p>
-    <p>Consumables: {{ starship.consumables }}</p>
-    <br>
-    
-    <p>Length: {{ starship.length }} METERS </p>
-    <p>Maximum Atmosphering Speed: {{ starship.max_atmosphering_speed }} KM/H </p>
-    <p>Hyperdrive Rating: {{ starship.hyperdrive_rating }}</p>
-    <p>Maximum speed in realspace: {{ starship.MGLT }} MGLT </p>
-</div>
-    
+<div class="container-fluid card">
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="imagesURL" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <h1 class="white-text">{{ starship.name | titlecase }}</h1>
+            <div class="container">
+                <p class="gray-text"><strong>Model:</strong> {{ starship.model }}</p>
+                <p class="gray-text"><strong>StarShip Class:</strong> {{ starship.starship_class }}</p>
+                <p class="white-text"><strong>Manufacturer:</strong> {{ starship.manufacturer }}</p>
+                <p class="white-text"><strong>Cost:</strong> {{ starship.cost_in_credits }} CREDITS</p>
+                <br>
+                <p class="white-text"><strong>Crew:</strong> {{ starship.crew }}</p>
+                <p class="white-text"><strong>Passenger Capacity:</strong> {{ starship.passengers }}</p>
+                <p class="white-text"><strong>Cargo Capacity:</strong> {{ starship.cargo_capacity }} TONS</p>
+                <p class="white-text"><strong>Consumables:</strong> {{ starship.consumables }}</p>
+                <br>
+                <p class="white-text"><strong>Length: </strong>{{ starship.length }} METERS</p>
+                <p class="white-text"><strong>Maximum Atmosphering Speed:</strong> {{ starship.max_atmosphering_speed }} KM/H</p>
+                <p class="white-text"><strong>Hyperdrive Rating:</strong> {{ starship.hyperdrive_rating }}</p>
+                <p class="white-text"><strong>Maximum speed in realspace:</strong> {{ starship.MGLT }} MGLT</p>
+            </div>
+        </div>
+    </div>
 </div>

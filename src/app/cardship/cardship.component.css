@@ -1,0 +1,11 @@
+.container-fluid{
+    background-color: black;
+}
+
+.white-text {
+    color: white;
+}
+
+.gray-text{
+    color: gainsboro;
+}
