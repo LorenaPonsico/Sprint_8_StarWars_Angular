@@ -3,9 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ShipsService } from '../_services/ships.service';
 
-@Component({ templateUrl: 'starships.component.html', styleUrls: ['starships.component.css']  })
+@Component({ 
+  selector: 'app-listships',
+  templateUrl: 'listships.component.html', 
+  styleUrls: ['listships.component.css']  })
 
-export class StarShipsComponent implements OnInit {
+
+
+export class ListShipsComponent implements OnInit {
 
     ships: any[] = [];
 

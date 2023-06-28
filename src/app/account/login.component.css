@@ -1,0 +1,22 @@
+.card{
+    background-color: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-header{
+    color: #ffdd59;
+}
+
+.btn{
+    color: black;
+    background-color: #ffdd59; /* Color de fondo del botón */
+    border-radius: 20px; /* Hace que el botón sea redondeado ajustando el valor según el tamaño deseado */
+    padding: 10px 20px;
+    
+}
+
+.btn:hover{
+    box-shadow: 0 0 10px #ffdd59;
+    
+}

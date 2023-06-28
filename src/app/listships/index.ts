@@ -1,0 +1,1 @@
+export * from './listships.component';

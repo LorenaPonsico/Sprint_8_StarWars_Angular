@@ -1,27 +1,11 @@
-<link rel="stylesheet" href="app.component.css">
 
-<body class="bg-black">
+<div class="container-fluid">
+
     
-    <nav class="navbar navbar-expand navbar-dark bg-black px-3 d-flex justify-content-center align-items-center " *ngIf="user">
-        <div class="navbar-nav flex-column align-items-center justify-content-center">
-            <a class="navbar-brand d-flex justify-content-center" href="#">
-            <img class="imagenLogo" src="assets/star-wars-logo-31.png">
-        </a>
-        <br>
-        <div class="d-flex">
-            <a class="nav-item nav-link custom-font mr-3" routerLink="/">HOME</a>
-            <button class="btn btn-link nav-item nav-link custom-font" (click)="logout()">LOGOUT</button>
-        </div>
-    </div>
-</nav>
-<br>
-
-
-
-<div class="container">
+    <app-header></app-header>
+    
     <router-outlet></router-outlet>
+    
 </div>
-
-</body>
 
 <!-- main app container -->
