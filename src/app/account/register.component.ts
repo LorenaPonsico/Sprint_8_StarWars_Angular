@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { first } from 'rxjs/operators';
 
+import { first } from 'rxjs/operators';
 import { AccountService } from '@app/_services';
 
-@Component({ templateUrl: 'register.component.html' })
+@Component({
+    templateUrl: 'register.component.html',
+    styleUrls: ['register.component.css']
+})
+
 export class RegisterComponent implements OnInit {
     form!: FormGroup;
     loading = false;
@@ -52,7 +56,7 @@ export class RegisterComponent implements OnInit {
             .pipe(first())
             .subscribe({
                 next: () => {
-                    this.router.navigate(['/account/login'], { queryParams: { registered: true }});
+                    this.router.navigate(['/account/login'], { queryParams: { registered: true } });
                 },
                 error: error => {
                     this.error = error;

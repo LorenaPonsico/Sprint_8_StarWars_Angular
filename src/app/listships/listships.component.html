@@ -1,21 +1,21 @@
-<link rel="stylesheet" href="listships.component.css">
+<body>
+  <h1 class="m-3">Starships</h1>
 
-<h1 class="white-text">Home / Starships</h1>
-
-<div class="container-fluid text-light">
-    <div class="row justify-content-center">
+  <div class="container-fluid text-light">
+    <div class="d-flex row justify-content-around ">
       <div
-        *ngFor="let ship of ships"
-        class="col-8 m-3 p-3 fw-lighter fs-6 title-style"
-        style="background-color: #151515"
+        *ngFor="let ship of ships; let i = index"
+        class="col-md-4 mb-3 d-flex justify-content-around "
       >
-        <a [routerLink]="['/cardship']" (click)="seeCardShip(ship)">
-          <h3>{{ ship.name }}</h3>
-        </a>
-        <p>{{ ship.model }}</p>
+        <div class="card p-3 fs-6">
+          <a [routerLink]="['/cardship']" (click)="seeCardShip(ship)">
+            <h3>{{ ship.name }}</h3>
+          </a>
+          <p>{{ ship.model }}</p>
+        </div>
       </div>
     </div>
-  
+
     <div class="row">
       <div class="col-12 d-flex flex-column align-items-center">
         <button (click)="loadShips()" class="btn btn-warning">
@@ -24,3 +24,4 @@
       </div>
     </div>
   </div>
+</body>

@@ -5,10 +5,15 @@
   }
 
   .imagenLogo{
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 80%;
   }
 
   .navbar{
     border-bottom: 1px solid gray;
+    
+  }
+
+  .btn:hover{
+    color: #ffde06; 
   }

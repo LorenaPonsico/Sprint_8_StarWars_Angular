@@ -1,27 +1,60 @@
 
-<link rel="stylesheet" href="header.component.css">
 <div class="container-fluid">
+
     <body class="bg-black">
         
-    <nav class="navbar navbar-expand navbar-dark bg-black px-3 d-flex justify-content-center align-items-center " >
-        <div class="navbar-nav flex-column align-items-center justify-content-center">
-            <a class="navbar-brand d-flex justify-content-center" href="welcome">
-            <img class="imagenLogo" src="assets/star-wars-logo-31.png">
-        </a>
-        <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/login" >LOGIN</button> 
-        <button class="btn btn-link nav-item nav-link custom-font" (click)="logout()" >LOG OUT</button> 
-        <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/register" >SIGN UP</button> 
 
+        <nav class="navbar navbar-expand navbar-dark bg-black px-3 d-flex justify-content-center align-items-center ">
+            <div class="navbar-nav flex-column align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                <a class="navbar-brand d-flex justify-content-center" href="welcome">
+                    <img class="imagenLogo" src="assets/star-wars-logo-31.png">
+                </a>
+                <div class="d-flex justify-content-end ">
+
+                    <button class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="account/login">LOGIN</button>
+                    <button class="btn btn-link nav-item nav-link custom-font" (click)="logout()">LOG OUT</button>
+                    <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/register">SIGN UP</button>
+                </div>
+                </div>
+
+                <br>
+                <div class="d-flex">
+                    <a class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="welcome">HOME</a>
+                    <a class="btn btn-link nav-item nav-link custom-font" routerLink="listships">STARSHIPS</a>
+                </div>
+            </div>
+        </nav>
         <br>
-        <div class="d-flex">
-            <a class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="welcome">HOME</a>
-            <a class="btn btn-link nav-item nav-link custom-font" routerLink="listships">STARSHIPS</a>
-        </div>
-    </div>
-</nav>
-<br>
 
-<!-- <app-welcome></app-welcome> -->
-
-</body>
+    </body>
 </div>
+
+<!-- <div class="container-fluid">
+
+    <body class="bg-black">
+
+        <nav class="navbar navbar-expand navbar-dark bg-black px-3 d-flex justify-content-center align-items-center">
+            <div class="navbar-nav flex-column align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand d-flex justify-content-center" href="welcome">
+                        <img class="imagenLogo" src="assets/star-wars-logo-31.png">
+                    </a>
+                    <div class="ml-auto">
+                        <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/login">LOGIN</button>
+                        <button class="btn btn-link nav-item nav-link custom-font" (click)="logout()">LOG OUT</button>
+                        <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/register">SIGN UP</button>
+                    </div>
+                </div>
+
+                <br>
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="welcome">HOME</a>
+                    <a class="btn btn-link nav-item nav-link custom-font" routerLink="listships">STARSHIPS</a>
+                </div>
+            </div>
+        </nav>
+        <br>
+
+    </body>
+</div> -->

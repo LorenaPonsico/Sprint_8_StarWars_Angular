@@ -1,7 +1,44 @@
 h3{
     color: white;
 }
+/* .container{
+    margin:0;
+} */
 
-.container-fluid{
+body{
+    overflow: hidden;
     background-color: black;
+    background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
+    margin: 0;
+    
 }
+
+
+
+.star-wars-text{
+    color: #ffde06;
+    padding: 40px;
+    text-align: justify;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    max-width: 1080px;
+    height: 800px;
+    transform: perspective(200px) rotateX(14deg) ;
+    animation: intro 25s linear infinite;
+}
+
+
+  
+  @keyframes intro {
+    0% {
+      transform: perspective(200px) rotateX(14deg) translateY(800px);
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: perspective(200px) rotateX(20deg) translateY(-1000px);
+      opacity: 0;
+    }
+  }
