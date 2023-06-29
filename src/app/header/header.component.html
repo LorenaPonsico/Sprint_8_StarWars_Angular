@@ -1,60 +1,36 @@
 
-<div class="container-fluid">
 
-    <body class="bg-black">
-        
+<body class="bg-black">
 
-        <nav class="navbar navbar-expand navbar-dark bg-black px-3 d-flex justify-content-center align-items-center ">
-            <div class="navbar-nav flex-column align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                <a class="navbar-brand d-flex justify-content-center" href="welcome">
-                    <img class="imagenLogo" src="assets/star-wars-logo-31.png">
+
+    <nav class="navbar    ">
+        <div class="container-fluid navbar-expand">
+            <div class=" navbar-collapse d-flex justify-content-center">
+                <a class="  " href="welcome">
+                    <img class="imagenLogo " src="assets/star-wars-logo-31.png">
                 </a>
-                <div class="d-flex justify-content-end ">
-
-                    <button class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="account/login">LOGIN</button>
+            </div>
+            
+            <div class="navbar-collapse justify-content-end">
+                <div class="menu-items">
+                    <button class="btn btn-link nav-item nav-link custom-font mr-3"
+                        routerLink="account/login">LOGIN</button>
+                    <span class="separator">|</span>
                     <button class="btn btn-link nav-item nav-link custom-font" (click)="logout()">LOG OUT</button>
-                    <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/register">SIGN UP</button>
-                </div>
-                </div>
-
-                <br>
-                <div class="d-flex">
-                    <a class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="welcome">HOME</a>
-                    <a class="btn btn-link nav-item nav-link custom-font" routerLink="listships">STARSHIPS</a>
+                    <span class="separator">|</span>
+                    <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/register">SIGN
+                        UP</button>
                 </div>
             </div>
-        </nav>
+
+            <br>
+        </div>
         <br>
+        <div class="navbar-collapse d-flex justify-content-center mb-1">
+            <a class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="welcome">HOME</a>
+            <span class="separator">|</span>
+            <a class="btn btn-link nav-item nav-link custom-font" routerLink="listships">STARSHIPS</a>
+        </div>
+    </nav>
 
-    </body>
-</div>
-
-<!-- <div class="container-fluid">
-
-    <body class="bg-black">
-
-        <nav class="navbar navbar-expand navbar-dark bg-black px-3 d-flex justify-content-center align-items-center">
-            <div class="navbar-nav flex-column align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <a class="navbar-brand d-flex justify-content-center" href="welcome">
-                        <img class="imagenLogo" src="assets/star-wars-logo-31.png">
-                    </a>
-                    <div class="ml-auto">
-                        <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/login">LOGIN</button>
-                        <button class="btn btn-link nav-item nav-link custom-font" (click)="logout()">LOG OUT</button>
-                        <button class="btn btn-link nav-item nav-link custom-font" routerLink="account/register">SIGN UP</button>
-                    </div>
-                </div>
-
-                <br>
-                <div class="d-flex justify-content-center">
-                    <a class="btn btn-link nav-item nav-link custom-font mr-3" routerLink="welcome">HOME</a>
-                    <a class="btn btn-link nav-item nav-link custom-font" routerLink="listships">STARSHIPS</a>
-                </div>
-            </div>
-        </nav>
-        <br>
-
-    </body>
-</div> -->
+</body>
