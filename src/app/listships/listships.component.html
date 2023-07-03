@@ -1,12 +1,10 @@
 <body>
-  <h1 class="m-3">Starships</h1>
-
   <div class="container-fluid text-light">
-    <div class="d-flex row justify-content-around ">
-      <div
-        *ngFor="let ship of ships; let i = index"
-        class="col-md-4 mb-3 d-flex justify-content-around "
-      >
+    <h1>Starships</h1>
+    <img *ngIf="!hasLoaded" src="assets/loader.svg" class="imgLoaded">
+
+    <div class="d-flex row justify-content-around">
+      <div *ngFor="let ship of ships; let i = index" class="col-md-4 mb-3 d-flex justify-content-around">
         <div class="card p-3 fs-6">
           <a [routerLink]="['/cardship']" (click)="seeCardShip(ship)">
             <h3>{{ ship.name }}</h3>

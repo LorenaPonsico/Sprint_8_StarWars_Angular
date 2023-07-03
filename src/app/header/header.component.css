@@ -1,31 +1,28 @@
-
 .custom-font {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    color: white;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: white;
+}
 
-  .imagenLogo{
-    width: 70%;
-    height: 80%;
-    
-  }
+.imagenLogo {
+  width: 60%;
+  height: 70%;
+  margin-left: 10px;
+}
 
-  .navbar{
-    border-bottom: 1px solid gray;
-    
-  }
+.navbar {
+  border-bottom: 1px solid gray;
+}
 
-  .btn:hover{
-    color: #ffde06; 
-  }
+.btn:hover {
+  color: #ffde06;
+}
 
-  .menu-items {
-    display: flex;
-  
+.menu-items {
+  display: flex;
 }
 
 .separator {
-    margin: 0 5px; /* Espacio entre la barra y el texto */
-    color: #fff; /* Color de la barra */
+  margin: 0 5px;
+  color: #fff;
 }

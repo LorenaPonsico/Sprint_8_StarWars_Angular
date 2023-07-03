@@ -5,9 +5,9 @@ h3 {
 body {
   overflow: hidden;
   background-color: black;
-  background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
-  margin: 0;
-  /* padding: 0; */
+     background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
+
+  
 
 }
 
@@ -17,7 +17,7 @@ body {
   justify-content: center;
   height: 100vh;
   perspective: 350px;
-  animation: intro 30s linear infinite;
+  animation: intro 25s linear infinite;
 }
 
 .star-wars-text {
@@ -35,7 +35,7 @@ body {
 
 @keyframes intro {
   0% {
-    transform: perspective(200px) rotateX(14deg) translateY(800px);
+    transform: perspective(200px) rotateX(14deg) translateY(400px);
     opacity: 1;
   }
 

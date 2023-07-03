@@ -1,5 +1,8 @@
 .container-fluid{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 
@@ -12,5 +15,7 @@
 }
 
 .content {
-    margin-top: 100px;
+
+    margin-top: 165px;
+    margin-bottom: 10px;
 }

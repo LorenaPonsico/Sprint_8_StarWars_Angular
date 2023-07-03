@@ -10,6 +10,7 @@ export class ShipsService {
     private serviceURL = 'https://swapi.dev/api/starships';
     private imageURL = 'https://starwars-visualguide.com/assets/img/starships/'
     private nextPage = 2;
+    private imagesPilots = 'https://starwars-visualguide.com/assets/img/characters/'
 
     constructor( private http: HttpClient) { }
     
@@ -23,6 +24,17 @@ export class ShipsService {
     getImages(starshipId: string): string {
       return `${this.imageURL}${starshipId}.jpg`;
     }
+
+    getImagesPilots(pilotsId: string): any {
+      return `${this.imagesPilots}${pilotsId}.jpg`;
+    }
+
+    // getPilot(pilotId: string): Observable<any> {
+    //   const url = `${this.serviceURL}/people/${pilotId}/`;
+    //   return this.http.get(url);
+    // }
+   
+    // getFilms()
   }
   
 

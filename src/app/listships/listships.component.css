@@ -1,26 +1,37 @@
-h1{
-font-size: 25px;
-letter-spacing: 0.2em;
-color: #ffde06;
-}
-
-body{
-    background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
-}
-
-.card{
-    background-color: #151515 
-}
-
-h3{
+h1 {
+    font-size: 25px;
+    letter-spacing: 0.2em;
     color: #ffde06;
-    
-    
+    margin-bottom: 20px;
 }
-h3:hover{
+
+body {
+    background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
+
+}
+
+.card {
+    background-color: #151515;
+    height: 100px;
+    width: 400px;
+}
+
+h3 {
+    color: #ffde06;
+
+
+}
+
+h3:hover {
     text-shadow: 0 0 10px #ffde06;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
+.imgLoaded {
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}

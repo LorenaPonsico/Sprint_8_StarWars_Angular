@@ -8,14 +8,10 @@ import { AccountService } from '@app/_services';
 })
 export class HeaderComponent {
 
-
-  
-  constructor( private accountService: AccountService){}
-
-
+  constructor(private accountService: AccountService) { }
 
   logout() {
     this.accountService.logout();
-}
+  }
 
 }

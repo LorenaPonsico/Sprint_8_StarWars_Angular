@@ -1,11 +1,15 @@
+<div class="container-fluid card">
+    <div class="row">
 
-    
-    
-    <div class="container-fluid card">
-        <div class="row">
-            <div class="col-md-4">
-            <img [src]="imagesURL" class="img-fluid">
+        <div class="col-md-4">
+            <div *ngIf="!imageError">
+                <img class="img-fluid" [src]="imagesURL" (error)="onImageError()" />
+            </div>
+            <div *ngIf="imageError">
+                <img class="img-fluid" [src]="errorImageUrl" />
+            </div>
         </div>
+
         <div class="col-md-8">
             <h1 class="white-text">{{ starship.name | titlecase }}</h1>
             <div class="container">
@@ -20,11 +24,25 @@
                 <p class="white-text"><strong>Consumables:</strong> {{ starship.consumables }}</p>
                 <br>
                 <p class="white-text"><strong>Length: </strong>{{ starship.length }} METERS</p>
-                <p class="white-text"><strong>Maximum Atmosphering Speed:</strong> {{ starship.max_atmosphering_speed }} KM/H</p>
+                <p class="white-text"><strong>Maximum Atmosphering Speed:</strong> {{ starship.max_atmosphering_speed }}
+                    KM/H</p>
                 <p class="white-text"><strong>Hyperdrive Rating:</strong> {{ starship.hyperdrive_rating }}</p>
                 <p class="white-text"><strong>Maximum speed in realspace:</strong> {{ starship.MGLT }} MGLT</p>
+                
+
+                <app-pilots *ngIf="imagesPilots.length > 0" [imagesPilots]="imagesPilots"></app-pilots>
+                <div *ngIf="imagesPilots.length === 0" class="white-text">
+                    No pilots available right now
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+
+<!-- 
+<div> PELICULAS
+</div> --> -->

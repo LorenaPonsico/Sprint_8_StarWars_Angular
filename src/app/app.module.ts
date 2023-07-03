@@ -16,6 +16,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ListShipsComponent } from './listships/listships.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { PilotsComponent } from './cardship/pilots/pilots.component';
+import { FilmsComponent } from './cardship/films/films.component';
 
 @NgModule({
     imports: [
@@ -32,7 +34,9 @@ import { HeaderComponent } from './header/header.component';
         CardshipComponent,
         WelcomeComponent,
         HomeComponent,
-        HeaderComponent
+        HeaderComponent,
+        PilotsComponent,
+        FilmsComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
