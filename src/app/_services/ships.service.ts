@@ -11,6 +11,7 @@ export class ShipsService {
     private imageURL = 'https://starwars-visualguide.com/assets/img/starships/'
     private nextPage = 2;
     private imagesPilots = 'https://starwars-visualguide.com/assets/img/characters/'
+    private filmsUrl = 'https://starwars-visualguide.com/assets/img/films/'
 
     constructor( private http: HttpClient) { }
     
@@ -28,13 +29,10 @@ export class ShipsService {
     getImagesPilots(pilotsId: string): any {
       return `${this.imagesPilots}${pilotsId}.jpg`;
     }
+    getFilmsXShip(filmId: string): any {
 
-    // getPilot(pilotId: string): Observable<any> {
-    //   const url = `${this.serviceURL}/people/${pilotId}/`;
-    //   return this.http.get(url);
-    // }
-   
-    // getFilms()
+      return `${this.filmsUrl}${filmId}.jpg`;
+    }
   }
   
 

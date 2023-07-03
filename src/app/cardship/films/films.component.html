@@ -1,1 +1,6 @@
-<p>films works!</p>
+<div class="d-flex">
+    <p class="text"><strong>Films:</strong></p>
+    <div *ngFor="let film of films">
+        <img class="img-film mx-2 p-1 flex-fill" [src]="film" alt="Film Image" />
+    </div>
+</div>
