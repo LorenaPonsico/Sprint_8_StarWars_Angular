@@ -55,7 +55,7 @@ export class RegisterComponent implements OnInit {
             .pipe(first())
             .subscribe({
                 next: () => {
-                    this.router.navigate(['/account/login'], { queryParams: { registered: true } });
+                    this.router.navigate(['/account/home'], { queryParams: { registered: true } });
                 },
                 error: error => {
                     this.error = error;

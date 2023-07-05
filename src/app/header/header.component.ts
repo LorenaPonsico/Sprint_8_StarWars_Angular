@@ -8,10 +8,19 @@ import { AccountService } from '@app/_services';
 })
 export class HeaderComponent {
 
-  constructor(private accountService: AccountService) { }
+  // isLoggedIn: boolean = false;
+
+  constructor(private accountService: AccountService) {
+  }
+
 
   logout() {
     this.accountService.logout();
+    // this.isLoggedIn = false;
+  }
+
+  get isLoggedIn(): boolean {
+    return this.accountService.userValue !== null;
   }
 
 }

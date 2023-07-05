@@ -6,7 +6,7 @@
     <div class="d-flex row justify-content-around">
       <div *ngFor="let ship of ships; let i = index" class="col-md-4 mb-3 d-flex justify-content-around">
         <div class="card p-3 fs-6">
-          <a [routerLink]="['/cardship']" (click)="seeCardShip(ship)">
+          <a [routerLink]="['/listships', 'cardship', i + 1]" (click)="seeCardShip(ship)">
             <h3>{{ ship.name }}</h3>
           </a>
           <p>{{ ship.model }}</p>
