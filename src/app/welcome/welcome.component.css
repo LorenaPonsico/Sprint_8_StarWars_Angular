@@ -5,10 +5,7 @@ h3 {
 body {
   overflow: hidden;
   background-color: black;
-     background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
-
-  
-
+  background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
 }
 
 .star-wars-container {

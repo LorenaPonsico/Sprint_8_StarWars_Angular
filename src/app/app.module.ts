@@ -14,7 +14,6 @@ import { LoginComponent, RegisterComponent } from './account';
 import { CardshipComponent } from './cardship/cardship.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ListShipsComponent } from './listships/listships.component';
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { PilotsComponent } from './cardship/pilots/pilots.component';
 import { FilmsComponent } from './cardship/films/films.component';
@@ -33,7 +32,6 @@ import { FilmsComponent } from './cardship/films/films.component';
         RegisterComponent,
         CardshipComponent,
         WelcomeComponent,
-        HomeComponent,
         HeaderComponent,
         PilotsComponent,
         FilmsComponent

@@ -1,33 +1,33 @@
 body {
-    background-color: black;
-    margin: 0;
-    overflow: hidden;
-  }
-  .container-fluid{
-    background-color: black;
-    position: fixed;
-    top: 50px;
-    left: 0;
-  }
-  .card{
-    background-color: black;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  margin: 0;
+  overflow: hidden;
 }
 
-.card-header{
-    color: #ffde06;
+.container-fluid {
+  background-color: black;
+  position: fixed;
+  top: 50px;
+  left: 0;
 }
 
-.btn{
-    color: black;
-    background-color: #ffde06; /* Color de fondo del botón */
-    border-radius: 20px; /* Hace que el botón sea redondeado ajustando el valor según el tamaño deseado */
-    padding: 10px 20px;
-    
+.card {
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.btn:hover{
-    box-shadow: 0 0 10px
-    
+.card-header {
+  color: #ffde06;
+}
+
+.btn {
+  color: black;
+  background-color: #ffde06;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px
 }

@@ -5,13 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css']
 })
-export class WelcomeComponent  {
-  // showLetters: boolean = true;
+export class WelcomeComponent {
 
-  // ngOnInit(): void {
-  //   setTimeout(() => {
-  //     this.showLetters = true;
-  //   }, 0);// Retraso de 10 milisegundos para garantizar la aparición instantánea
-  // }
-  
+
 }

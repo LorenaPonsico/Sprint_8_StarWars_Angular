@@ -2,15 +2,14 @@ body {
     background-color: black;
     margin: 0;
     overflow: hidden;
-  }
-  
-  .container-fluid {
+}
+
+.container-fluid {
     background-color: black;
     position: fixed;
     top: 0;
     left: 0;
-
-  }
+}
 
 .card {
     background-color: black;
@@ -30,5 +29,4 @@ body {
 
 .btn:hover {
     box-shadow: 0 0 10px #ffde06;
-
 }

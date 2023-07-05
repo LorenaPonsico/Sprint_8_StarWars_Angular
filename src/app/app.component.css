@@ -1,12 +1,11 @@
-.container-fluid{
+.container-fluid {
     background-color: black;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-
-  .fixed-header {
+.fixed-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +14,6 @@
 }
 
 .content {
-
     margin-top: 165px;
     margin-bottom: 10px;
 }

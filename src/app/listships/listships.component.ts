@@ -9,6 +9,7 @@ import { ShipsService } from '../_services/ships.service';
   styleUrls: ['listships.component.css']
 })
 export class ListShipsComponent implements OnInit {
+  
   ships: any[] = [];
   hasLoaded: boolean = false;
 
@@ -16,7 +17,7 @@ export class ListShipsComponent implements OnInit {
     private http: HttpClient,
     private router: Router,
     private shipService: ShipsService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.http.get('https://swapi.dev/api/starships').subscribe((response: any) => {
@@ -30,7 +31,7 @@ export class ListShipsComponent implements OnInit {
   }
 
   loadShips() {
-    this.shipService.getShips().subscribe(
+    this.shipService.getStarShips().subscribe(
       (response) => {
         this.ships = this.ships.concat(response.results);
       },

@@ -1,4 +1,4 @@
-.container-fluid{
+.container-fluid {
     background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
 }
 
@@ -6,8 +6,6 @@
     color: white;
 }
 
-.gray-text{
+.gray-text {
     color: gainsboro;
 }
-
-

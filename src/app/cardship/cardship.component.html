@@ -28,16 +28,16 @@
                     KM/H</p>
                 <p class="white-text"><strong>Hyperdrive Rating:</strong> {{ starship.hyperdrive_rating }}</p>
                 <p class="white-text"><strong>Maximum speed in realspace:</strong> {{ starship.MGLT }} MGLT</p>
-                
-              
+
+
 
                 <app-pilots *ngIf="imagesPilots.length > 0" [imagesPilots]="imagesPilots"></app-pilots>
                 <div *ngIf="imagesPilots.length === 0" class="white-text">
                     <strong>Pilots: </strong> No pilots available right now
                 </div>
                 <br>
-                <app-films  [films]="films" ></app-films>
-                
+                <app-films [films]="films"></app-films>
+
             </div>
         </div>
     </div>

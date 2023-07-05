@@ -6,13 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./pilots.component.css']
 })
 export class PilotsComponent implements OnInit {
-  
-  
-  @Input()  imagesPilots: any[] = [];
 
-  ngOnInit(){
+  @Input() imagesPilots: any[] = [];
+
+  ngOnInit() {
     this.imagesPilots
   }
 
- 
 }

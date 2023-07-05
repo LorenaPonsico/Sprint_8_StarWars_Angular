@@ -7,12 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FilmsComponent implements OnInit {
 
-
   @Input() films: any[] = [];
 
-  ngOnInit(){
+  ngOnInit() {
     this.films
-debugger
   }
-  
+
 }
