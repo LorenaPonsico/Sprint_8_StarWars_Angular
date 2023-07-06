@@ -17,7 +17,9 @@ export class ShipsService {
 
   getStarShips(): Observable<any> { // llamada a la API.  construye la URL de la solicitud GET para obtener las naves espaciales de una página específica
     const url = `${this.serviceURL}/?page=${this.nextPage}`;
-    this.nextPage++;
+    if (this.nextPage < 5) {
+      this.nextPage++;  
+    }
     return this.http.get<any>(url);
   }
 

@@ -43,6 +43,14 @@ export class AccountService {
     }
 
     register(user: User) {
-        return this.http.post(`${environment.apiUrl}/users/register`, user);
-    }
+        return this.http.post(`${environment.apiUrl}/users/register`, user)
+          .pipe(
+            map(() => {
+              // Autologin después de registrarse
+              if (user.username && user.password) {
+                this.login(user.username, user.password).subscribe();
+              }
+            })
+          );
+      }
 }

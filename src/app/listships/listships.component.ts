@@ -9,7 +9,7 @@ import { ShipsService } from '../_services/ships.service';
   styleUrls: ['listships.component.css']
 })
 export class ListShipsComponent implements OnInit {
-  
+
   ships: any[] = [];
   hasLoaded: boolean = false;
 
@@ -27,7 +27,6 @@ export class ListShipsComponent implements OnInit {
       }));
       this.hasLoaded = true; // Marcar como cargado
     });
-    this.loadShips();
   }
 
   loadShips() {
@@ -36,12 +35,14 @@ export class ListShipsComponent implements OnInit {
         this.ships = this.ships.concat(response.results);
       },
       (error) => {
-        console.error('Error al carregar les naus:', error);
+        console.error('No hay mas naves que mostrar', error);
       }
     );
   }
 
-  seeCardShip(ship: any) {
-    this.router.navigate(['/cardship'], { state: { starship: ship } });
+
+  seeCardShip(ship: any, i: any) {
+    let shipId: any = i + 1;
+    this.router.navigate([`listships/cardship/${shipId}`], { state: { starship: ship } });
   }
 }

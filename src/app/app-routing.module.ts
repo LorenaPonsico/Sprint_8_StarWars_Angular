@@ -9,14 +9,17 @@ import { WelcomeComponent } from './welcome/welcome.component';
 const routes: Routes = [
     { path: '', component: WelcomeComponent },
     { path: 'welcome', component: WelcomeComponent },
-    { path: 'listships', component: ListShipsComponent, canActivate: [AuthGuard] },
-    { path: 'cardship', component: CardshipComponent, canActivate: [AuthGuard] },
+    {
+        path: 'listships', canActivate: [AuthGuard], children: [
+            { path: '', component: ListShipsComponent },
+            { path: 'cardship/:shipId', component: CardshipComponent },
+        ]
+    },
     { path: 'account/login', component: LoginComponent },
     { path: 'account/register', component: RegisterComponent },
-
-    // otherwise redirect to home
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'listships/cardship' } // Redirect all unknown routes to listships/cardship
 ];
+
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

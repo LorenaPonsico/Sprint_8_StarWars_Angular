@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ShipsService } from '@app/_services/ships.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class CardshipComponent implements OnInit {
   public films: any[] = [];
 
 
-  constructor(private shipsService: ShipsService) { }
+  constructor(private shipsService: ShipsService, private router: Router) { }
 
   ngOnInit(): void {
     this.starship = history.state.starship;

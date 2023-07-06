@@ -8,7 +8,7 @@ import { AccountService } from '@app/_services';
 })
 export class HeaderComponent {
 
-  // isLoggedIn: boolean = false;
+
 
   constructor(private accountService: AccountService) {
   }
@@ -16,7 +16,6 @@ export class HeaderComponent {
 
   logout() {
     this.accountService.logout();
-    // this.isLoggedIn = false;
   }
 
   get isLoggedIn(): boolean {

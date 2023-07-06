@@ -1,12 +1,12 @@
 <body>
-  <div class="container-fluid text-light">
+  <div class="container-fluid text-light mt-3">
     <h1>Starships</h1>
     <img *ngIf="!hasLoaded" src="assets/loader.svg" class="imgLoaded">
 
     <div class="d-flex row justify-content-around">
       <div *ngFor="let ship of ships; let i = index" class="col-md-4 mb-3 d-flex justify-content-around">
         <div class="card p-3 fs-6">
-          <a [routerLink]="['/listships', 'cardship', i + 1]" (click)="seeCardShip(ship)">
+          <a [routerLink]="['/listships/cardship']" (click)="seeCardShip(ship, i)">
             <h3>{{ ship.name }}</h3>
           </a>
           <p>{{ ship.model }}</p>
